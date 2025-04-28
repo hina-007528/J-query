@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+</head>
+<style>
+    #show{
+        height: 200px;
+        width: 40%;
+        background-color: skyblue;
+        border: 1px solid black;
+    }
+</style>
+<body>
+
+<p id="p">hello world</p>
+<div id="show" >
+
+</div>
+<button id="btn1">show notification</button>
+<button id="btn2">hide this</button>
+<!-- <button id="btn2">hide notification</button> -->
+<script>
+    // $(document).ready(function(){
+    //     $("#p").hover( function () {
+    //         $(this).css({
+    //             "color": "blue",
+    //             "font-size": "20px"
+    //         });
+    //     });
+    // });
+   $(document).ready(function(){
+    $("#btn1").click(function(){
+    $("#show").show(); // Simply show the element
+});
+
+    $("#btn2").click(function(){
+        $("#show").hide();
+    })
+    // $("#btn2").click(function(){
+    //     $("#show").removeClass("box");
+    // })
+   })
+
+    
+</script>
+
+</body>
+</html>
